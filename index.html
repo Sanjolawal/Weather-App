@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/dist/output.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body
+    class="grid justify-items-center md:bg-[rgb(37,41,52)] items-center h-[100vh] text-white bg-[rgb(55,62,75)]"
+  >
+    <section class="h-[70vh] w-[60%] md:mb-[6vh] sm:w-[60%]">
+      <h1
+        class="font-extrabold my-6 text-center text-[clamp(34px,3.2vw,3.3vw)]"
+      >
+        Weather Forecast
+      </h1>
+      <form class="grid justify-items-center gap-y-2">
+        <input
+          type="text"
+          placeholder="Type in a location"
+          required
+          class="w-[50%] text-black font-bold sm:w-[80%]"
+          id="input"
+        />
+        <button
+          class="rounded-[6px] py-[1vh] px-[2vw] font-extrabold bg-red-500 w-[30%] sm:w-[50%]"
+          type="submit"
+          id="btn"
+        >
+          Search
+        </button>
+        <article class="hidden" id="error"></article>
+      </form>
+      <div class="grid grid-cols-[35%_65%] mt-3 sm:grid-cols-1 gap-y-4">
+        <article
+          class="bg-[rgb(144,169,212)] pl-[2vw] rounded-[20px]"
+          style="
+            background-image: url('images/mountain.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+          "
+        >
+          <h1 class="text-[clamp(30px,3vw,3.1vw)] mb-14">
+            <span class="font-bold">Thursday</span><br />Febuary 11 <br />Berlin
+          </h1>
+          <p class="text-[clamp(30px,3vw,3.1vw)]">
+            <span class="font-bold">-3 celsius</span><br />Hail
+          </p>
+        </article>
+        <section class="bg-[rgb(37,41,52)] rounded-r-[20px] rounded-br-[20px]">
+          <div
+            class="pl-6 sm:pl-0 mb-[4vh] font-bold text-[clamp(16px,1.6vw,1.7vw)]"
+          >
+            <section class="grid grid-cols-[85%_15%]">
+              <p>PREDICTABILITY</p>
+              <p>82%</p>
+            </section>
+
+            <section class="grid grid-cols-[85%_15%]">
+              <p>HUMIDITY</p>
+              <p>88%</p>
+            </section>
+
+            <section class="grid grid-cols-[85%_15%]">
+              <p>WIND</p>
+              <p>4km/h</p>
+            </section>
+
+            <section class="grid grid-cols-[75%_25%]">
+              <p>AIR PRESSURE</p>
+              <p>1026.5mb</p>
+            </section>
+
+            <section class="grid grid-cols-[85%_15%]">
+              <p>MAX TEMP</p>
+              <p>-2%</p>
+            </section>
+
+            <section class="grid grid-cols-[85%_15%]">
+              <p>MIN TEMP</p>
+              <p>-9%</p>
+            </section>
+          </div>
+          <article
+            class="ml-6 bg-[rgb(75,80,86)] mb-[5vh] w-[90%] py-4 grid grid-cols-5"
+          >
+            <div class="grid justify-center">
+              <img src alt="tempimg" id="img" loading="lazy" />
+              <p class="text-center">Fri</p>
+              <p class="text-center">3%</p>
+            </div>
+
+            <div class="grid justify-center">
+              <img src alt="tempimg" id="img" loading="lazy" />
+              <p class="text-center">Fri</p>
+              <p class="text-center">3%</p>
+            </div>
+
+            <div class="grid justify-center">
+              <img src alt="tempimg" loading="lazy" />
+              <p class="text-center">Fri</p>
+              <p class="text-center">3%</p>
+            </div>
+
+            <div class="grid justify-center">
+              <img src alt="tempimg" loading="lazy" />
+              <p class="text-center">Fri</p>
+              <p class="text-center">3%</p>
+            </div>
+
+            <div class="grid justify-center">
+              <img src alt="tempimg" loading="lazy" />
+              <p class="text-center">Fri</p>
+              <p class="text-center">3%</p>
+            </div>
+          </article>
+        </section>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
