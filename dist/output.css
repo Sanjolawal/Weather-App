@@ -505,22 +505,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[7\] {
-  height: 7;
-}
-
-.h-\[70\] {
-  height: 70;
-}
-
-.h-\[70v\] {
-  height: 70v;
-}
-
 .h-\[70vh\] {
   height: 70vh;
 }
@@ -541,24 +525,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 90%;
 }
 
-.w-\[0\%\] {
-  width: 0%;
-}
-
-.w-\[80\%\] {
-  width: 80%;
-}
-
-.w-\[10\%\] {
-  width: 10%;
-}
-
-.w-\[100\%\] {
-  width: 100%;
-}
-
-.grid-cols-1 {
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+.grid-cols-\[35\%_65\%\] {
+  grid-template-columns: 35% 65%;
 }
 
 .grid-cols-\[85\%_15\%\] {
@@ -571,10 +539,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-5 {
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-\[35\%_65\%\] {
-  grid-template-columns: 35% 65%;
 }
 
 .items-center {
@@ -639,11 +603,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(75 80 86 / var(--tw-bg-opacity));
 }
 
-.bg-red-600 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(220 38 38 / var(--tw-bg-opacity));
-}
-
 .py-\[1vh\] {
   padding-top: 1vh;
   padding-bottom: 1vh;
@@ -659,6 +618,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-1 {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
 .pl-\[2vw\] {
   padding-left: 2vw;
 }
@@ -667,8 +636,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 1.5rem;
 }
 
-.pl-0 {
-  padding-left: 0px;
+.pr-1 {
+  padding-right: 0.25rem;
 }
 
 .text-center {
@@ -679,12 +648,64 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: clamp(34px,3.2vw,3.3vw);
 }
 
+.text-\[clamp\(20px\2c 2vw\2c 2\.1vw\)\] {
+  font-size: clamp(20px,2vw,2.1vw);
+}
+
 .text-\[clamp\(30px\2c 3vw\2c 3\.1vw\)\] {
   font-size: clamp(30px,3vw,3.1vw);
 }
 
 .text-\[clamp\(16px\2c 1\.6vw\2c 1\.7vw\)\] {
   font-size: clamp(16px,1.6vw,1.7vw);
+}
+
+.text-\[clamp\(20px\2c 2\.4vw\2c 2\.1vw\)\] {
+  font-size: clamp(20px,2.4vw,2.1vw);
+}
+
+.text-\[clamp\(20px\2c 2\.4vw\2c 2\.vw\)\] {
+  font-size: clamp(20px,2.4vw,2.vw);
+}
+
+.text-\[clamp\(20px\2c 2\.4vw\2c 2\.6vw\)\] {
+  font-size: clamp(20px,2.4vw,2.6vw);
+}
+
+.text-\[clamp\(2px\2c 2\.4vw\2c 2\.6vw\)\] {
+  font-size: clamp(2px,2.4vw,2.6vw);
+}
+
+.text-\[clamp\(24px\2c 2\.4vw\2c 2\.6vw\)\] {
+  font-size: clamp(24px,2.4vw,2.6vw);
+}
+
+.text-\[clamp\(px\2c 2\.4vw\2c 2\.6vw\)\] {
+  font-size: clamp(px,2.4vw,2.6vw);
+}
+
+.text-\[clamp\(3px\2c 2\.4vw\2c 2\.6vw\)\] {
+  font-size: clamp(3px,2.4vw,2.6vw);
+}
+
+.text-\[clamp\(30px\2c 2\.4vw\2c 2\.6vw\)\] {
+  font-size: clamp(30px,2.4vw,2.6vw);
+}
+
+.text-\[clamp\(30px\2c 2\.vw\2c 2\.6vw\)\] {
+  font-size: clamp(30px,2.vw,2.6vw);
+}
+
+.text-\[clamp\(30px\2c 2\.2vw\2c 2\.6vw\)\] {
+  font-size: clamp(30px,2.2vw,2.6vw);
+}
+
+.text-\[clamp\(30px\2c 2\.25vw\2c 2\.6vw\)\] {
+  font-size: clamp(30px,2.25vw,2.6vw);
+}
+
+.text-\[clamp\(30px\2c 2\.25vw\2c 2\.4vw\)\] {
+  font-size: clamp(30px,2.25vw,2.4vw);
 }
 
 .font-extrabold {
@@ -712,30 +733,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 @media (max-width: 1036px) {
   .md\:mb-\[6vh\] {
     margin-bottom: 6vh;
-  }
-
-  .md\:w-\[40\%\] {
-    width: 40%;
-  }
-
-  .md\:w-\[0\%\] {
-    width: 0%;
-  }
-
-  .md\:w-\[90\%\] {
-    width: 90%;
-  }
-
-  .md\:w-\[60\%\] {
-    width: 60%;
-  }
-
-  .md\:grid-cols-\[35\%_65\%\] {
-    grid-template-columns: 35% 65%;
-  }
-
-  .md\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .md\:bg-\[rgb\(37\2c 41\2c 52\)\] {
