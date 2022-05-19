@@ -5,6 +5,8 @@ let Run = (e) => {
 
   const input = document.getElementById("input").value;
 
+  // First request sent to the metaweather server to get location deatails plus it woeid
+
   const request = new XMLHttpRequest();
 
   request.open(
@@ -30,6 +32,8 @@ let Run = (e) => {
         error.style.display = "none";
         response = JSON.parse(request.responseText);
       }
+
+      // Second request sent , using woeid of the location gotten from the first to pull other data's such as humidity, days and co.
 
       const request2 = new XMLHttpRequest();
 
@@ -68,6 +72,8 @@ let Run = (e) => {
 
           let day = daate.getDay();
 
+          // Since days are given by javascript in numbers 0 - 6 , so, to prevent days exceeding 6 in our output, so i used control statement below.
+
           // console.log(day);
           let day2 = day + 1;
           if (day2 >= 7) {
@@ -89,6 +95,8 @@ let Run = (e) => {
           if (day6 >= 7) {
             day6 = 0;
           }
+
+          // Since days are given by javascript in numbers 0 - 6 , down below is their convertion to strings such 0 = sunday(Sun) , 1 = Monday (Mon) e.t.c
 
           if (day === 0) {
             day = "Sun";
